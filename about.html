@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
      <!-- header -->
      <header>
         <nav class="navbar">
+            <span class="hamburger-btn materail-symbols-rounded"><i class="fa-solid fa-bars"></i></span>
             <a href="#" class="logo">
-                <h1>Food</h1>
+                <img src="src/assets/images/Good-food-logo-design-on-transparent-background-PNG-removebg-preview.png">
+                <h1>FOOD</h1>
             </a>
             <ul class="link">
+                <span class="close-btn materail-symbols-rounded"><i class="fa-solid fa-xmark"></i></span>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallary.html">Gallary</a></li>
@@ -27,27 +30,112 @@
     <div class="container-long">
         <div class="container-short">
             <div class="card-about">
-                <img src="images/2148651053.jpg">
+                <img src="src/assets/images/2148651053.jpg">
             </div>
             <div class="card-about">
               <div class="text-box">
-                <h1>About Us</h1>
+                <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec congue massa. Curabitur fringilla odio sed tortor bibendum ornare. Quisque vel feugiat felis. Proin fermentum libero vitae sollicitudin ultricies. Nulla nibh mi, aliquam facilisis dapibus non, imperdiet eget enim. Nullam elit quam, scelerisque et metus non, euismod tempor augue. Vestibulum ultricies condimentum risus. Nam maximus massa consectetur libero congue dictum. Morbi vehicula velit nibh, vitae viverra dolor sagittis quis.</p>
-                <div class="box-now"></div>
+                <button>Order Now</button>
               </div>
             </div>
         </div>
     </div>
+    <min class="main-profile">
+       <div class="profile-big">
+        <div class="container-profile">
+            <div class="header-profile">
+                <div class="card-gird-profile">
+                    <div class="profile">
+                        <div class="profile-header">
+                            <img src="src/assets/images/avatar2.png">
+                        </div>
+                        <div class="profile-body">
+                            <h1>john son</h1>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="profile-footer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet egestas tortor nec eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-header">
+                            <img src="src/assets/images/avatar2.png">
+                        </div>
+                        <div class="profile-body">
+                            <h1>John son</h1>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="profile-footer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet egestas tortor nec eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-header">
+                            <img src="src/assets/images/avatar2.png">
+                        </div>
+                        <div class="profile-body">
+                            <h1>John son</h1>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="profile-footer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet egestas tortor nec eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-header">
+                            <img src="src/assets/images/avatar2.png">
+                        </div>
+                        <div class="profile-body">
+                            <h1>John son</h1>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="profile-footer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet egestas tortor nec eleifend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </min>
      <!-- section -->
      <section class="footer">
         <div class="footer-row">
             <div class="footer-col">
+                <a href="#">
+                  <img src="src/assets/images/Good-food-logo-design-on-transparent-background-PNG-removebg-preview.png">
+                  <h2>FOOD</h2>
+                </a>
+              </div>
+
+            <div class="footer-col">
                 <h1>Menu</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallary</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -74,5 +162,17 @@
             </div>
         </div>
      </section>
+     
+     <script>
+        const navbarmenu = document.querySelector(".navbar .link");
+        const hamburgerBtn = document.querySelector(".hamburger-btn");
+        const hidemenuBtn = navbarmenu.querySelector(".close-btn");
+
+        hamburgerBtn.addEventListener("click", () => {
+            navbarmenu.classList.toggle("show-menu");
+        });
+
+        hidemenuBtn.addEventListener("click", () => hamburgerBtn.click());
+     </script>
 </body>
 </html>

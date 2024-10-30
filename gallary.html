@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
      <!-- header -->
      <header>
         <nav class="navbar">
+            <span class="hamburger-btn materail-symbols-rounded"><i class="fa-solid fa-bars"></i></span>
             <a href="#" class="logo">
-                <h1>Food</h1>
+                <img src="src/assets/images/Good-food-logo-design-on-transparent-background-PNG-removebg-preview.png">
+                <h1>FOOD</h1>
             </a>
             <ul class="link">
+                <span class="close-btn materail-symbols-rounded"><i class="fa-solid fa-xmark"></i></span>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallary.html">Gallary</a></li>
@@ -33,55 +36,55 @@
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Biryani</h1>
-                            <img src="images/dish-7043103_1920.jpg">
+                            <img src="src/assets/images/dish-7043103_1920.jpg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Palak paneer</h1>
-                            <img src="images/Palak_Paneer_Made_Of_Spinach_And_Paneer_high_resolution_preview_2690011.jpg">
+                            <img src="src/assets/images/Palak_Paneer_Made_Of_Spinach_And_Paneer_high_resolution_preview_2690011.jpg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Samosa</h1>
-                            <img src="images/ai-generated-8553027_1920.jpg">
+                            <img src="src/assets/images/ai-generated-8553027_1920.jpg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Raita</h1>
-                            <img src="images/food-2362686_1920.jpg">
+                            <img src="src/assets/images/food-2362686_1920.jpg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>chickpea curry</h1>
-                            <img src="images/26185_3-2_1920-1280.jpg">
+                            <img src="src/assets/images/26185_3-2_1920-1280.jpg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Pasanda paneer </h1>
-                            <img src="images/vz4xrqsjtofevrnayi96.avif">
+                            <img src="src/assets/images/vz4xrqsjtofevrnayi96.avif">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Thandai</h1>
-                            <img src="images/images.jpeg">
+                            <img src="src/assets/images/images.jpeg">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>Lassi</h1>
-                            <img src="images/lassi1-1-min1683896413.png">
+                            <img src="src/assets/images/lassi1-1-min1683896413.png">
                         </div>
                     </div>
                     <div class="gallary-card">
                         <div class="header-gallary">
                             <h1>mango-lassi</h1>
-                            <img src="images/mango-lassi.jpg">
+                            <img src="src/assets/images/mango-lassi.jpg">
                         </div>
                     </div>
                 </div>
@@ -93,12 +96,19 @@
      <section class="footer">
         <div class="footer-row">
             <div class="footer-col">
+                <a href="#">
+                  <img src="src/assets/images/Good-food-logo-design-on-transparent-background-PNG-removebg-preview.png">
+                  <h2>FOOD</h2>
+                </a>
+              </div>
+
+            <div class="footer-col">
                 <h1>Menu</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallary</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -125,5 +135,17 @@
             </div>
         </div>
      </section>
+
+     <script>
+        const navbarmenu = document.querySelector(".navbar .link");
+        const hamburgerBtn = document.querySelector(".hamburger-btn");
+        const hidemenuBtn = navbarmenu.querySelector(".close-btn");
+
+        hamburgerBtn.addEventListener("click", () => {
+            navbarmenu.classList.toggle("show-menu");
+        });
+
+        hidemenuBtn.addEventListener("click", () => hamburgerBtn.click());
+     </script>
 </body>
 </html>
